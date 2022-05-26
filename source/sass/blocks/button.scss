@@ -1,0 +1,37 @@
+.button {
+  min-width: 323px;
+  min-height: 54px;
+  display: block;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 35px;
+  background-color: $cyan;
+  border: none;
+  border-radius: 23px;
+  color: $white;
+
+
+  @media screen and (min-width: $tablet) {
+    min-width: 221px;
+    font-size: 27px;
+    line-height: 35px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    min-width: 150px;
+    min-height: 36px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+}

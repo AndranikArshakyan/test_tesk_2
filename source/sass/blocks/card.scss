@@ -1,0 +1,113 @@
+.card {
+  font-weight: 500;
+}
+
+.card__title {
+  margin-top: 35px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  line-height: 30px;
+  color: $gray-43;
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 24px;
+    margin-left: 14px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+}
+
+.card__current-amount {
+  margin: 0;
+  margin-left: 20px;
+  font-size: 38px;
+  line-height: 41px;
+  color: $cyan;
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 14px;
+    font-size: 26px;
+    line-height: 27px;
+  }
+
+  &--small-amount {
+    color: $salmon;
+  }
+}
+
+.card__general-amount {
+  margin-left: -10px;
+  font-size: 24px;
+  line-height: 30px;
+  color: $gray-43;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 17px;
+  }
+}
+
+.card__info {
+  display: flex;
+}
+
+.card__inwork-count {
+  margin-left: 32px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 10px;
+  font-size: 62px;
+  color: $black-russian;
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 22px;
+    font-size: 42px;
+  }
+}
+
+.card__burning-count {
+  margin-top: 5px;
+  margin-right: 24px;
+  font-size: 38px;
+  color: $salmon;
+  position: relative;
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 16px;
+    font-size: 26px;
+  }
+}
+
+.card__burning {
+  position: absolute;
+  left: 0;
+  top: 40px;
+
+  @media screen and (min-width: $desktop) {
+    top: 25px;
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.card__wrapper {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__time {
+  margin-top: 10px;
+  font-size: 27px;
+  line-height: 30px;
+  color: $suva-grey;
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 5px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+}

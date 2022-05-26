@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Cera Pro";
+  font-style: medium;
+  font-weight: 500;
+  src: local("Cera Pro"),
+    url("/fonts/cerapromedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  font-style: bold;
+  font-weight: 700;
+  src: local("Cera Pro"),
+    url("/fonts/ceraprobold.woff") format("woff");
+}

@@ -1,0 +1,101 @@
+.support {
+  .title {
+    margin-top: 50px;
+
+     @media screen and (min-width: $desktop) {
+      margin-top: 78px;
+      padding-top: 50px;
+      border-top: 2px solid $silver;
+    }
+  }
+
+  .card {
+    position: relative;
+  }
+
+  .card::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 100px;
+    left: 20px;
+    background-color: $cyan;
+    border-radius: 4px;
+
+    @media screen and (min-width: $desktop) {
+      left: 14px;
+      height: 66px;
+    }
+  }
+
+  .card--small-amount::before {
+    background-color: $salmon;
+  }
+
+  .card__title {
+    margin-top: 27px;
+    margin-left: 32px;
+    margin-bottom: 0;
+
+    @media screen and (min-width: $desktop) {
+      margin-top: 18px;
+      margin-left: 22px;
+    }
+  }
+
+  .card__progress {
+    margin-top: 10px;
+    $margin-right: 48px;
+    margin-right: $margin-right;
+    width: calc(100% - $margin-right);
+    align-self: flex-end;
+    height: 16px;
+    border:0;
+    border-radius: 10px;
+    background: $super-silver;
+
+    @media screen and (min-width: $desktop) {
+      $margin-right: 20px;
+      margin-right: $margin-right;
+      width: calc(100% - $margin-right);
+      height: 10px;
+    }
+  }
+
+  .card__progress::-webkit-progress-bar {
+    min-width: 74px;
+    height: 16px;
+    border-radius: 10px;
+    background: $super-silver;
+
+    @media screen and (min-width: $desktop) {
+      height: 10px;
+    }
+  }
+
+  .card__progress::-webkit-progress-value {
+    border-radius: 10px;
+    background: $cyan;
+
+    @media screen and (min-width: $desktop) {
+      height: 10px;
+    }
+  }
+
+  .card__progress--small-amount::-webkit-progress-value {
+    background: $salmon;
+  }
+
+  .card__progress::-moz-progress-bar {
+    border-radius: 10px;
+    background: $cyan;
+
+    @media screen and (min-width: $desktop) {
+      height: 10px;
+    }
+  }
+
+  .card__progress--small-amount::-moz-progress-bar {
+    background: $salmon;
+  }
+}

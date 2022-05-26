@@ -1,0 +1,12 @@
+.page__body {
+  background-color: $smoke;
+  margin: 0;
+  font-family: 'Cera Pro', 'Arial', sans-serif;
+}
+
+.page__wrapper {
+  @media screen and (min-width: $desktop) {
+    width: 1300px;
+    margin: 0 auto;
+  }
+}
